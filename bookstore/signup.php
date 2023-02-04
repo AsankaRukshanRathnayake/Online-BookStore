@@ -11,6 +11,13 @@
 
     <body>
         <div>
+            <?php
+            include "header.php"
+            ?>
+        </div>
+
+
+        <div>
             <form action="" method="post">
                 <h3>Register Now</h3>
 
@@ -36,6 +43,13 @@
                 </p>
             
             </form>
+        </div>
+
+        <div>
+            <?php
+                include "footer.php"
+            ?>
+        </div>
                 
     </body>
 
