@@ -1,0 +1,8 @@
+.login_form_container{
+    min-height: 50vh;
+    background-color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding:2rem;
+}
