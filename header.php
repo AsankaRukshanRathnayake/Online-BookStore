@@ -1,5 +1,5 @@
-
 <?php
+/*
 if(isset($message)){
    foreach($message as $message){
       echo '
@@ -10,6 +10,7 @@ if(isset($message)){
       ';
    }
 }
+*/
 ?>
 
 
@@ -60,11 +61,12 @@ if(isset($message)){
                <span class="fas fa-user" id="user-btn"></span>
             </div>
 
-            <!--number of items added to cart by the user who has logged in-->
+            <!--number of items added to cart by the user who has logged in
             <?php
-               $select_cart_number = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+               $select_cart_number = mysqli_query($connection, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
                $cart_rows_number = mysqli_num_rows($select_cart_number); 
             ?>
+            -->
 
             <div class="navigation_icon">
                <a href="cart.php">
@@ -75,12 +77,16 @@ if(isset($message)){
 
          </div>
 
+         <!--
+
          <div class="">
             <?php 
                echo $_SESSION['user_name']; 
             ?>
             <a href="logout.php" class="delete-btn">logout</a>
          </div>
+
+-->
       </div>
    </div>
 
