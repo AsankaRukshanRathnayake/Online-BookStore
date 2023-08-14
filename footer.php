@@ -14,7 +14,7 @@
 
       <div class="footer1_column">
          <h3>quick links</h3>
-         <p><a href="home.php">Home</a></p>
+         <p><a href="index.php">Home</a></p>
          <p><a href="about.php">About</a></p>
          <p><a href="shop.php">Shop</a></p>
          <p><a href="contact.php">Contact</a></p>

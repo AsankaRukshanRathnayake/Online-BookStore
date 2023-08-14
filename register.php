@@ -65,7 +65,7 @@ if(isset($message)){
    <div class="register_form_container">
 
       <form action="" method="post">
-         <h3>register now</h3>
+         <h3>Register</h3>
          
          <input type="text" name="name" placeholder="enter your name" required class="registerfield">
          <input type="email" name="email" placeholder="enter your email" required class="registerfield">

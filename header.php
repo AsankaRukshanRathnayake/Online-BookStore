@@ -38,13 +38,13 @@ if(isset($message)){
    <div class="header2">
       <div class="header2_container">
          <div class="mainlogo_container">
-            <a href="home.php" class="mainlogo">
+            <a href="index.php" class="mainlogo">
                BookStore
             </a>
          </div>
 
          <nav class="navigation_bar">
-            <a href="home.php">HOME</a>
+            <a href="index.php">HOME</a>
             <a href="about.php">ABOUT</a>
             <a href="shop.php">SHOP</a>
             <a href="contact.php">CONTACT</a>

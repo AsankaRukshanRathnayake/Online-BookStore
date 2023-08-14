@@ -3,8 +3,8 @@
 $server   = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'bookstore';
+$database = 'shop_db';
 
-$connection = mysqli_connect($server, $username, $password, $database) or die("Database connection failed!");
+$conn = mysqli_connect($server, $username, $password, $database) or die("Database connection failed!");
 
 ?>
