@@ -6,6 +6,7 @@
 .cart_products_container{
     width:70%;
     background-color: aqua;
+    padding-bottom: 5rem;
 }
 
 .cart_total_container{
@@ -13,73 +14,58 @@
     background-color: chartreuse;
 }
 
-.cart_container{
-    max-width: 900px;
-    margin:0 auto;
-    display: list-item;
-    grid-template-columns: repeat(auto-fit, 15rem);
-    align-items: center;
-    gap:1.5rem;
-    justify-content: center;
-    background-color: yellow;
-}
-
-.cart_product{
+.cart table{
     text-align: center;
-    padding:2rem;
-    border-radius: .5rem;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    border:var(--border);
+    margin:1rem 5rem 1rem 5rem;
+    border-spacing: 0;
 }
 
-.cart_product_image{
-    width:40%;
+.cart .product_image{
+    max-width: 100px;
+    width:100%;
 }
 
 .cart .fa-times{
-    position: absolute;
-    top:1rem; right:1rem;
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
-    background-color: var(--red);
-    color:var(--white);
-    border-radius: .5rem;
-}
-
-.cart .fa-times:hover{
-    background-color: var(--black);
+    width:5rem;
+    font-size:2rem;
 }
 
 .cart .product_name{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:var(--black);
+    font-size: 1.5rem;
+    width:15rem;
 }
 
+
+
 .cart .product_price{
-    padding:1rem 0;
-    font-size: 2.5rem;
-    color:var(--red);
+    font-size: 1.5rem;
+    width:7rem;
 }
 
 .cart input[type="number"]{
     margin:.5rem 0;
-    border:var(--border);
+    border:2px solid black;
     border-radius: .5rem;
-    padding:1.2rem 1.4rem;
-    font-size: 2rem;
+    padding:.2rem .4rem;
+    font-size: 1.3rem;
     color:var(--black);
-    width: 9rem;
+    width: 3rem;
  }
 
+.cart .update{   
+    display: inline-block;
+    cursor: pointer;
+    color:var(--white);
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
 .rowtotal{
-    padding-top: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:var(--light-color);
+    width:10rem;
+    text-align: center;
 }
 
 .rowtotal span{
@@ -144,4 +130,3 @@
 .cart .checkout:hover{
     background-color: var(--black);
 }
-
