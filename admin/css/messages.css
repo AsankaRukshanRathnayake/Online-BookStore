@@ -1,0 +1,19 @@
+.message_container{
+    width:96%;
+    margin:1% 2% 1% 2%;
+    background-color: darkorange;
+    border:.2rem solid black;
+    border-radius:1rem;
+}
+
+.message_details{
+    padding:1% 2% 1% 2%;
+
+}
+
+.message{
+    margin:1% 1% 1% 1%;
+    padding:1% 2% 1% 2%;
+    width:94%;
+    border:.1rem solid black;
+}
