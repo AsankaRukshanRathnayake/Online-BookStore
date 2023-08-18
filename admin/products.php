@@ -15,7 +15,7 @@
         $image = $_FILES['image']['name'];
         $image_size = $_FILES['image']['size'];
         $image_tmp_name = $_FILES['image']['tmp_name'];
-        $image_folder = 'uploaded_img/'.$image;
+        $image_folder = '../uploaded_img/'.$image;
 
         $select_product_name = mysqli_query($connection, "SELECT name FROM `products` WHERE name = '$name'") or die('query failed');
 

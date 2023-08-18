@@ -64,7 +64,7 @@
             ?>
 
             <form action="" method="post" class="product">
-                <img class="product_image" src="original/uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+                <img class="product_image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
                 <div class="product_name"><?php echo $fetch_products['name']; ?></div>
                 <div class="product_price">$<?php echo $fetch_products['price']; ?>/-</div>
         
