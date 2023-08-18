@@ -1,0 +1,23 @@
+.admin_details_container{
+    width:100%;
+    background-color: aqua;
+}
+
+.quick_links_container{
+    width:100%;
+    background-color: pink;
+}
+
+.admin_link{
+    margin:3% 5% 3% 5%;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    text-align: center;
+    border:1px solid black;
+    border-radius:3rem;
+}
+
+.admin_link a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}

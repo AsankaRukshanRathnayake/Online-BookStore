@@ -1,0 +1,14 @@
+.main{
+    width:100%;
+    display:flex;
+}
+
+.sidenavbar{
+    width:20%;
+    background-color: chocolate;
+}
+
+.content{
+    width:80%;
+    background-color: brown;
+}
