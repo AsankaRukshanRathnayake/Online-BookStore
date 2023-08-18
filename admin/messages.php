@@ -23,7 +23,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Product</title>
+   <title>Messages</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -55,7 +55,7 @@
             ?>
                 <div class="message_container">
                     <div class="message_details">
-                        From : <?php echo $fetch_message['email']; ?> 
+                        From : <?php echo $fetch_message['name']; ?> 
                         ( User : <?php echo $fetch_message['user_id']; ?> ) &nbsp; &nbsp;
                         email: <a href="<?php echo $fetch_message['email']; ?>"><?php echo $fetch_message['email']; ?></a> <br>
                         Phone : <?php echo $fetch_message['number']; ?>
