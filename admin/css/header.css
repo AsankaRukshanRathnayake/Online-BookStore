@@ -1,0 +1,85 @@
+:root{
+    --darkblue:#2c2b3d;
+    --ash:#849d9b;
+    --gray:#b1c3c2;
+    --black:#333;
+    --white:#fff;
+    --greenblue:#1ac1b5;
+    --light-white:#ccc;
+    --cream:#fce4db;
+    --gold:#e58f23;
+ }
+ 
+.header{
+
+}
+
+.header2{
+    width:100%;
+    background-color:var(--darkblue);
+    color:var(--white);
+}
+
+.header2_container{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display:flex;
+}
+
+.mainlogo_container{
+    width:30%;
+}
+
+.navigation_bar{
+    width:40%;
+}
+
+.navigation_icon_container{
+    width:30%;
+    color:black;
+    display: flex;
+}
+
+.mainlogo_container a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.mainlogo{
+
+}
+
+.navigation_bar a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.navigation_icon{
+    margin-right: 0.7rem;
+    color:var(--white);
+    text-decoration: none;
+}
+
+.navigation_icon_container a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.logged_user{
+    position: absolute;
+    top:120%; 
+    right:2rem;
+    color:var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+
+
