@@ -1,11 +1,15 @@
 .admin_details_container{
     width:100%;
     background-color: aqua;
+    justify-content: center;
 }
 
 .quick_links_container{
     width:100%;
     background-color: pink;
+}
+
+.admin_details_container img{
 }
 
 .admin_link{
