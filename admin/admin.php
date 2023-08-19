@@ -1,5 +1,12 @@
 <?php
     include '../connection.php';
+    session_start();
+
+    $admin_id = $_SESSION['admin_id'];
+
+    if(!isset($admin_id)){
+        header('location:login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +21,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <link type="text/css" rel="stylesheet" href="../css/styles.css">
-   <link type="text/css" rel="stylesheet" href="../css/header.css">
+   <link type="text/css" rel="stylesheet" href="css/header.css">
    <link type="text/css" rel="stylesheet" href="css/sidenavebar.css">
    <link type="text/css" rel="stylesheet" href="css/style.css">
    <link type="text/css" rel="stylesheet" href="css/dashboard.css">
@@ -25,7 +32,8 @@
 <body>
 
     <!--header-->
-    <?php include 'header.php'; ?>
+    <?php include 'header.php'; 
+    ?>
 
     <div class="main">
         <div class="sidenavbar">

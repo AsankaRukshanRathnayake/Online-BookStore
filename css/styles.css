@@ -3,3 +3,14 @@ html, body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+:root{
+    --darkblue:#2c2b3d;
+    --ash:#849d9b;
+    --gray:#b1c3c2;
+    --black:#333;
+    --white:#fff;
+    --greenblue:#1ac1b5;
+    --light-white:#ccc;
+    --cream:#fce4db;
+ }
