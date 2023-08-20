@@ -1,12 +1,38 @@
+/* top main image */
 .main_image{
     width:100%;
+    padding-bottom: 0;
+    margin-bottom:0;
 }
+
+/* characteristics */
+
+.characteristics{
+    width:86%;
+    padding:2% 7% 2% 7%;
+    display: flex;
+    background-color: var(--gold);
+}
+
+.characterbox{
+    width:29.33%;
+    text-align: center;
+    padding:2% 2% 2% 2%;
+    margin:0% 2% 0% 2%;
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+/* products */
 
 .products_section{
     width:100%;
+    background-color: var(--cream);
 }
 
 .products_section h1{
+    padding-top:1rem;
+    padding-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -17,7 +43,7 @@
 
   .slider-container {
     width: 96%;
-    margin:2% 2% 2% 2%;
+    margin:0% 2% 2% 0%;
     overflow: hidden;
     position: relative;
   }
@@ -29,37 +55,36 @@
   
   .card {
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 0 20px;
   }
   
   .prev-button,
   .next-button {
-    margin-top: 200px;
-    margin-bottom:200px;
+    margin-top: 100px;
+    margin-bottom:180px;
     justify-content: center;
   }
 
 .product{
-    border-radius: .3rem;
     background-color: var(--white);
     text-align: center;
     position: relative;
+    background-color: var(--cream);
 }
 
 .product_image{
     width:100%;
-    max-width: 150px;
 }
 
 .product_name{
-    padding:1rem 0;
+    padding:.1rem 0;
     font-size: 1rem;
     color:var(--black);
 }
 
 .product_price{
     position: absolute;
-    top:0.01rem; left:0.1rem;
+    top:0.01rem;;
     border-radius: .5rem;
     padding:1rem;
     font-size: 1rem;
@@ -91,3 +116,5 @@
 .product .addtocart:hover{
     background-color: var(--black);
 }
+
+/* 

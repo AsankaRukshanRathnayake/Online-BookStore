@@ -14,9 +14,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <link type="text/css" rel="stylesheet" href="css/styles.css">
-   <link type="text/css" rel="stylesheet" href="css/header.css">
-   <link type="text/css" rel="stylesheet" href="css/footer.css">
+   <link type="text/css" rel="stylesheet" href="css/topheader.css">
    <link type="text/css" rel="stylesheet" href="css/home.css">
+   <link type="text/css" rel="stylesheet" href="css/footer.css">
+   
 
 </head>
 <body>
@@ -26,6 +27,27 @@
 
     <!--main body-->
     <img src="images/main1.png" alt="" class="main_image">
+
+    <div class="characteristics">
+        <div class="characterbox">
+            <img src="moreicons/welfare.png" alt="">
+            <h2>Social Responsibility</h2>
+            <p>A portion of each purchase goes toward supporting literacy initiatives and promoting the love of reading worldwide.</p>
+        </div>
+
+        <div class="characterbox">
+            <img src="moreicons/collection.png" alt="">
+            <h2>Vast Collection</h2>
+            <p>Explore our extensive collection spanning diverse genres, ensuring you find the perfect read to suit your taste and mood.</p>
+        </div>
+
+        <div class="characterbox">
+            <img src="moreicons/gift.png" alt="">
+            <h2>Gift Options</h2>
+            <p>Share the joy of reading by gifting books to loved ones, with beautifully wrapped options and customizable notes available.</p>
+        </div>
+
+    </div>
 
     <div class="products_section">
         <h1>New Arrivals</h1>
