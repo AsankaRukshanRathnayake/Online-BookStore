@@ -1,0 +1,104 @@
+header{
+    width:100%;
+}
+
+.header2{
+    width:80%;
+    background-color:#0a0837;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex;
+}
+
+.mainlogo_container{
+    width:24%;
+}
+
+.navigation_bar{
+    width:71%;
+}
+
+.navigation_icon_container{
+    width:5%;
+    color:var(--white);
+    display: inline-flex;
+}
+
+            /* mainlogo */
+.mainlogo_container a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.mainlogo_container a img{
+    text-decoration: none;
+    width:25px;
+}
+
+.company{
+    font-size: 1.6rem;
+}
+
+            /* navigation bar */
+.navigation_bar{
+    display: inline-flex;
+}
+
+.navigation_bar span{
+    padding-right: 1rem;
+    padding-left:1rem;
+    text-align: center;
+}
+
+.navigation_bar span a{
+    color:var(--white);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.navigation_bar span:hover{
+    background-color: var(--white);
+    color:var(--white);
+}
+
+.navigation_bar span a:hover{
+    color:var(--black);
+}
+
+            /* icons */
+.navigation_icon_container a,span{
+    text-decoration: none;
+    color:var(--white);
+    vertical-align: middle;
+}
+
+.navigation_icon{
+    margin-right: 0.8rem;
+    text-decoration: none;
+}
+
+.navigation_icon a{
+    color:var(--white);
+}
+
+/*
+
+.logged_user{
+    position: absolute;
+    top:120%; 
+    right:2rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+
+*/

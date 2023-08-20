@@ -15,11 +15,9 @@ if(isset($message)){
 
 
 
-<header class="header">
+<header>
 
    <div class="header1">
-      <div class="header1_container">
-
          <div class="socialmedia1">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -30,35 +28,29 @@ if(isset($message)){
          <div class=loginregister>
             <a href="login.php">login</a> |
             <a href="register.php">register</a> 
-         </div>
-
-      </div>   
+         </div>  
    </div>
 
    <div class="header2">
-      <div class="header2_container">
          <div class="mainlogo_container">
-            <a href="index.php" class="mainlogo">
-               BookStore
-            </a>
+            <a href="index.php"><img src="moreicons/logo.png" alt=""></a>
+            <a href="index.php" class="company">BookStore</a>
          </div>
 
          <nav class="navigation_bar">
-            <a href="index.php">HOME</a>
-            <a href="about.php">ABOUT</a>
-            <a href="shop.php">SHOP</a>
-            <a href="contact.php">CONTACT</a>
-            <a href="orders.php">orders</a>
+            <span class="page"><a href="index.php">HOME</a></span>
+            <span class="page"><a href="about.php">ABOUT</a></span>
+            <span class="page"><a href="shop.php">SHOP</a></span>
+            <span class="page"><a href="contact.php">CONTACT</a></span>
          </nav>
 
          <div class="navigation_icon_container">
-
             <div class="navigation_icon">
                <a href="search_page.php" class="fas fa-search"></a>
             </div>
 
             <div class="navigation_icon">
-               <span class="fas fa-user" id="user-btn"></span>
+               <span class="fas fa-user"></span>
             </div>
 
             <!--number of items added to cart by the user who has logged in
@@ -87,7 +79,6 @@ if(isset($message)){
          </div>
 
 -->
-      </div>
    </div>
 
 </header>

@@ -1,0 +1,141 @@
+header{
+    width:100%;
+}
+
+/* header 1 */
+
+.header1{
+    width:80%;
+    padding-left:10%;
+    padding-right: 10%;
+    background-color:var(--darkblue);
+    display: flex;
+}
+
+.socialmedia1{
+    width:50%;
+}
+
+.loginregister{
+    width:50%;
+    color:white;
+    text-align:right;
+}
+
+.socialmedia1 a{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    text-decoration: none;
+    color:var(--white);
+}
+
+.loginregister a{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    color:var(--white);
+    text-decoration: none;
+}
+
+
+/* header2 */
+.header2{
+    width:80%;
+    background-color:var(--white);
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex;
+}
+
+.mainlogo_container{
+    width:24%;
+}
+
+.navigation_bar{
+    width:64%;
+}
+
+.navigation_icon_container{
+    width:12%;
+    color:var(--black);
+    display: inline-flex;
+}
+
+            /* mainlogo */
+.mainlogo_container a{
+    text-decoration: none;
+    color:var(--black);
+}
+
+.mainlogo_container a img{
+    text-decoration: none;
+    width:25px;
+}
+
+.company{
+    font-size: 1.6rem;
+}
+
+            /* navigation bar */
+.navigation_bar{
+    display: inline-flex;
+}
+
+.navigation_bar span{
+    width:6.3rem;
+    text-align: center;
+}
+
+.navigation_bar span a{
+    color:var(--black);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.navigation_bar span:hover{
+    background-color: var(--darkblue);
+    color:var(--white);
+}
+
+.navigation_bar span a:hover{
+    color:var(--white);
+}
+
+            /* icons */
+.navigation_icon_container a,span{
+    text-decoration: none;
+    color:var(--black);
+    vertical-align: middle;
+}
+
+.navigation_icon{
+    margin-right: 0.8rem;
+    text-decoration: none;
+}
+
+.navigation_icon a{
+    color:var(--black);
+}
+
+/*
+
+.logged_user{
+    position: absolute;
+    top:120%; 
+    right:2rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+
+*/
+
+

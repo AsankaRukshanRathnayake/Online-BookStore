@@ -1,0 +1,33 @@
+html, body{
+    padding:0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --lightblack:#2c2b3d;
+    --ash:#849d9b;
+    --gray:#b1c3c2;
+    --black:#333;
+    --white:#fff;
+    --greenblue:#1ac1b5;
+    --light-white:#ccc;
+    --cream:#fce4db;
+    --gold:#e58f23;
+    --darkblue:#0a0837;
+ }
+
+.main{
+    width:100%;
+    display:flex;
+}
+
+.sidenavbar{
+    width:20%;
+    background-color: chocolate;
+}
+
+.content{
+    width:80%;
+    background-color: brown;
+}
