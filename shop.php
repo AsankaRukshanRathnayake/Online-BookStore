@@ -20,7 +20,7 @@
    <link type="text/css" rel="stylesheet" href="css/styles.css">
    <link type="text/css" rel="stylesheet" href="css/header.css">
    <link type="text/css" rel="stylesheet" href="css/footer.css">
-   <link type="text/css" rel="stylesheet" href="css/home.css">
+   <link type="text/css" rel="stylesheet" href="css/shop.css">
    
    
 </head>
