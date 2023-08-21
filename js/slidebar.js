@@ -1,29 +1,35 @@
-const slider = document.querySelector('.slider');
-const cards = document.querySelectorAll('.card');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  const cardSliders = document.querySelectorAll('.card-slider');
 
-function updateButtons() {
-  prevButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex === cards.length - 4;
-}
+  cardSliders.forEach(sliderContainer => {
+    const slider = sliderContainer.querySelector('.slider');
+    const cards = sliderContainer.querySelectorAll('.card');
+    const prevButton = sliderContainer.querySelector('.prev-button');
+    const nextButton = sliderContainer.querySelector('.next-button');
+    let currentIndex = 0;
 
-function slide(direction) {
-  if (direction === 'next') {
-    currentIndex = Math.min(currentIndex + 1, cards.length - 1);
-  } else {
-    currentIndex = Math.max(currentIndex - 1, 0);
-  }
+    function updateButtons() {
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex >= cards.length - 8;
+    }
 
-  const translateXValue = -currentIndex * (cards[0].offsetWidth + 20); // Card width + margin
-  slider.style.transform = `translateX(${translateXValue}px)`;
+    function slide(direction) {
+      if (direction === 'next') {
+        currentIndex = Math.min(currentIndex + 1, cards.length - 1);
+      } else {
+        currentIndex = Math.max(currentIndex - 1, 0);
+      }
 
-  updateButtons();
-}
+      const translateXValue = -currentIndex * (cards[0].offsetWidth + 20); // Card width + margin
+      slider.style.transform = `translateX(${translateXValue}px)`;
 
-prevButton.addEventListener('click', () => slide('prev'));
-nextButton.addEventListener('click', () => slide('next'));
+      updateButtons();
+    }
 
-// Initial button state update
-updateButtons();
+    prevButton.addEventListener('click', () => slide('prev'));
+    nextButton.addEventListener('click', () => slide('next'));
+
+    // Initial button state update
+    updateButtons();
+  });
+});
