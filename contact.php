@@ -40,7 +40,7 @@
    <link type="text/css" rel="stylesheet" href="css/styles.css">
    <link type="text/css" rel="stylesheet" href="css/header.css">
    <link type="text/css" rel="stylesheet" href="css/footer.css">
-   <link type="text/css" rel="stylesheet" href="css/contact.css">
+   <link type="text/css" rel="stylesheet" href="css/contactus.css">
 
 </head>
 <body>
@@ -49,17 +49,31 @@
     <?php include 'header.php'; ?>
 
     <!--main body-->
-    <div class="contact_form_container">
-        <form action="" method="post" name="contactform">
-            <h3>Contact Us</h3>
+    <div class="about">
+        <img src="images/main7.jpg" alt="" class="image">
 
-            <input type="text" name="name" required placeholder="enter your name" class="contact_field">
-            <input type="email" name="email" required placeholder="enter your email" class="contact_field">
-            <input type="text" name="phonenumber" required placeholder="enter your phone number" class="contact_field">
-            <textarea name="message"  placeholder="enter your message" id="" cols="30" rows="10" class="contact_field"></textarea>
-            <input type="submit" value="send message" name="send" class="sendmessage">
-   </form>
+        <div class="content">
+            <div class="contact_link_container">
+                <p> Reach out to us and let your literary voice resonate with fellow book enthusiasts.<br> Contact us today!</p>
+                
+                <div class="contact_link">
+                    <a href="mailto:thegiftshop@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact_form_container">
+                <form action="" method="post" name="contactform">
+                    <h3>Contact Us</h3>
 
+                    <input type="text" name="name" required placeholder="enter your name" class="contact_field">
+                    <input type="email" name="email" required placeholder="enter your email" class="contact_field">
+                    <input type="text" name="phonenumber" required placeholder="enter your phone number" class="contact_field">
+                    <textarea name="message"  placeholder="enter your message" id="" cols="30" rows="10" class="contact_field"></textarea>
+                    <input type="submit" value="send message" name="send" class="sendmessage">
+                </form>
+            </div>
+        </div>
     </div>
 
     <!--footer-->
