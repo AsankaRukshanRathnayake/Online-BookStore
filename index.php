@@ -18,9 +18,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <link type="text/css" rel="stylesheet" href="css/styles.css">
-   <link type="text/css" rel="stylesheet" href="css/topheader.css">
-   <link type="text/css" rel="stylesheet" href="css/home.css">
+   <link type="text/css" rel="stylesheet" href="css/header.css">
    <link type="text/css" rel="stylesheet" href="css/footer.css">
+   <link type="text/css" rel="stylesheet" href="css/home.css">
+   
    
 </head>
 <body>
@@ -34,8 +35,7 @@
         <p class="content">Welcome to our virtual book haven, <br> where tales come alive. <br>Immerse yourself in a world of literary wonders, curated with care to ignite your imagination.</p>
     </div>
     
-
-
+    <!--charactieristics -->
     <div class="characteristics">
         <div class="characterbox">
             <img src="moreicons/welfare.png" alt="">
