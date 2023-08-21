@@ -1,11 +1,12 @@
 <?php
     include 'connection.php';
+    session_start();
+    if (isset($_SESSION['user_id'])){
+        $user_id = $_SESSION['user_id'];
+    }
 ?>
 
 <?php
-    session_start();
-    $user_id = $_SESSION['user_id'];
-
     if(isset($_POST['send'])){
         $name = mysqli_real_escape_string($connection, $_POST['name']);
         $email = mysqli_real_escape_string($connection, $_POST['email']);
