@@ -40,7 +40,7 @@ header{
 /* header2 */
 .header2{
     width:80%;
-    background-color:var(--white);
+    background-color:#ccc;
     padding-left: 10%;
     padding-right: 10%;
     display:flex;
