@@ -39,10 +39,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/styles.css" type="text/css">
-   <link rel="stylesheet" href="css/header.css" type="text/css">
-   <link rel="stylesheet" href="css/footer.css" type="text/css">
-   <link rel="stylesheet" href="css/register.css" type="text/css">
+   <link type="text/css" rel="stylesheet" href="css/styles.css">
+   <link type="text/css" rel="stylesheet" href="css/header.css">
+   <link type="text/css" rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" type="text/css" href="css/register.css">
 
 </head>
 <body>
