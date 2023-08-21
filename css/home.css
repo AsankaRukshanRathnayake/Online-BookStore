@@ -47,7 +47,7 @@
     background-color: var(--black);
 }
 
-/* about */
+/* products */
 
 .products_section{
     width:100%;
@@ -199,39 +199,4 @@
 .about .content a span:hover{
     background-color: var(--darkblue);
     color:var(--gold);
-}
- 
-/* about and contact */
-
-.about-contact_container{
-    width:100%;
-    display:inline-flex;
-}
-
-.about-contact_container .about{
-    width:50%;
-    background-color: var(--gold);
-}
-
-.about-contact_container .contact{
-    width:50%;
-    background-color: var(--greenblue);
-}
-
-.about-contact_container h2{
-    text-align: center;
-    font-size:1.6rem;
-}
-
-.about-contact_container p{
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.about-contact_container a{
-
-}
-
-.about-contact_container a span{
-
 }

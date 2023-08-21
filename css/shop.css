@@ -1,72 +1,86 @@
-.shopping_container{
-
+.products_section{
+    width:100%;
+    padding-bottom: 3rem;
 }
 
-.title{
-
+.products_section h1{
+    padding-top:1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
 }
 
-.products_container{
-    max-width: 1200px;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    align-items: flex-start;
-    gap:1.5rem;
-    justify-content: center;
-
+.card-slider {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display:inline-flex;
+    position:relative;
+}
+  
+.slider-container {
+    max-width: 211vh;
+    overflow: hidden;
+    position: relative;
+}
+  
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+  
+.card {
+    flex: 0 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    max-width: 11rem;
 }
 
 .product{
-    border-radius: .5rem;
-    background-color: var(--white);
-    box-shadow: var(--box-shadow);
-    padding:2rem;
     text-align: center;
-    border:var(--border);
-    position: relative;
-}
-
-.product_image{
-    width:100%;
 }
 
 .product_name{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:var(--black);
+    font-size: 1rem;
 }
 
 .product_price{
     position: absolute;
-    top:1rem; left:1rem;
+    top:0.01rem;
     border-radius: .5rem;
-    padding:1rem;
-    font-size: 2.5rem;
-    color:var(--white);
-    background-color: var(--red);
+    padding:.2rem;
+    font-size: 1rem;
+    background-color: var(--cream);
+    color:red;
+    z-index: 3;
 }
 
 .product_quantity{
-    width: 100%;
-    padding:1.2rem 1.4rem;
+    width: 30%;
+    padding:0.2rem 0.4rem;
     border-radius: .5rem;
-    border:var(--border);
-    margin:1rem 0;
-    font-size: 2rem;
+    font-size: 1rem;
+}
+  
+.prev-button {
+    top:35%;
+    left:2rem;
+    padding:1rem 1rem 1rem 1rem;
+    position:absolute;
+    z-index: 4;
 }
 
-.product .addtocart{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:1rem 3rem;
-    cursor: pointer;
-    color:var(--white);
-    font-size: 1.8rem;
-    border-radius: .5rem;
-    text-transform: capitalize;   
+.next-button {
+    top:35%;
+    right: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+    position:absolute;
+    z-index:4;
+
 }
 
-.product .addtocart:hover{
-    background-color: var(--black);
+.product_image{
+    width:10rem;
 }
