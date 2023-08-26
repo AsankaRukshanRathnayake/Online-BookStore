@@ -46,7 +46,7 @@ if(isset($message)){
 
          <div class="navigation_icon_container">
             <div class="navigation_icon">
-               <a href="search_page.php" class="fas fa-search"></a>
+               <a href="search.php" class="fas fa-search"></a>
             </div>
 
             <div class="navigation_icon">

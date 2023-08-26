@@ -1,0 +1,17 @@
+.search_result{
+    width:90%;
+    padding:5% 5% 5% 5%;
+    min-height:58vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12rem);
+}
+
+.search_result form{
+    width:15rem;
+    margin:1rem 1rem 1rem 1rem;
+    position:relative;
+}
+
+.search_result form img{
+    max-width:10rem;
+}
