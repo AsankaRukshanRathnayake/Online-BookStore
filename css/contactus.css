@@ -32,7 +32,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid white;
 }
 
 .contact_link_container p{
@@ -71,13 +70,11 @@
     width: 25rem;
     border-radius: .7rem;
     text-align: center;
-    border:1px solid white;
 }
 
 .contact_form_container form h3{
     font-size: 2rem;
     margin-bottom: 1rem;
-    border:1px solid white;
  }
 
  .contact_form_container form .contact_field{
@@ -89,7 +86,6 @@
     color:black;
     border:black;
     margin:1rem 0;
-    border:1px solid white;
  }
 
  .sendmessage{
@@ -99,5 +95,4 @@
    font-size: 1rem;
    border-radius: 1rem;
    background-color: gainsboro;
-   border:1px solid white;
  }
