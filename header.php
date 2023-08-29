@@ -69,6 +69,8 @@ if(isset($message)){
 
          </div>
 
+</div>
+
          <!--
             TODO
 

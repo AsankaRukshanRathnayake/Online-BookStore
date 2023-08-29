@@ -98,7 +98,7 @@
                             <form action="" method="post" class="product">
                                 <img class="product_image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
                                 <div class="product_name"><?php echo $fetch_products['name']; ?></div>
-                                <div class="product_price">$<?php echo $fetch_products['price']; ?>/-</div>
+                                <div class="product_price">Rs.<?php echo $fetch_products['price']; ?>/-</div>
         
                                 <input type="number" min="1" name="product_quantity" value="1" max="100" class="product_quantity">
                                 <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -147,7 +147,7 @@
                             <form action="" method="post" class="product">
                                 <img class="product_image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
                                 <div class="product_name"><?php echo $fetch_products['name']; ?></div>
-                                <div class="product_price">$<?php echo $fetch_products['price']; ?>/-</div>
+                                <div class="product_price">Rs.<?php echo $fetch_products['price']; ?>/-</div>
         
                                 <input type="number" min="1" name="product_quantity" value="1" max="100" class="product_quantity">
                                 <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">

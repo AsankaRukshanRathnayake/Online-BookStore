@@ -113,6 +113,7 @@ header{
 .navigation_icon{
     margin-right: 0.8rem;
     text-decoration: none;
+    color:var(--black);
 }
 
 .navigation_icon a{
