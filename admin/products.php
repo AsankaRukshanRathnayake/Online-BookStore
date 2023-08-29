@@ -12,6 +12,7 @@
 
         $name = mysqli_real_escape_string($connection, $_POST['name']);
         $price = $_POST['price'];
+        $author = mysqli_real_escape_string($connection, $_POST['author']);
         $image = $_FILES['image']['name'];
         $image_size = $_FILES['image']['size'];
         $image_tmp_name = $_FILES['image']['tmp_name'];
@@ -23,7 +24,7 @@
         if(mysqli_num_rows($select_product_name) > 0){
             $message[] = 'product name already added';
         }else{
-            $add_product_query = mysqli_query($connection, "INSERT INTO `products`(name, price, image, category) VALUES('$name', '$price', '$image', '$category')") or die('query failed');
+            $add_product_query = mysqli_query($connection, "INSERT INTO `products`(name, price, author, image, category) VALUES('$name', '$price', '$author', '$image', '$category')") or die('query failed');
 
             if($add_product_query){
                 if($image_size > 2000000){
@@ -54,6 +55,7 @@
    <link type="text/css" rel="stylesheet" href="admincss/adminstyles.css">
    <link type="text/css" rel="stylesheet" href="admincss/adminheader.css">
    <link type="text/css" rel="stylesheet" href="admincss/sidenavebar.css">
+   <link type="text/css" rel="stylesheet" href="admincss/products.css">
    <link type="text/css" rel="stylesheet" href="css/style.css">
 
 
@@ -75,9 +77,10 @@
                     <form action="" method="post" enctype="multipart/form-data">
                         <h3>add product</h3>
                         
-                        <input type="text" name="name" class="box" placeholder="enter product name" required>
-                        <input type="number" min="0" name="price" class="box" placeholder="enter product price" required>
-                        <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
+                        <input type="text" name="name" class="productfield" placeholder="enter product name" required>
+                        <input type="number" min="0" name="price" class="productfield" placeholder="enter product price" required>
+                        <input type="text" name="author" class="productfield" placeholder="enter author name" required>
+                        <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="productfield" required>
                         
                         <select name="category" required>
                             <option value="novels" id="novels">Novels</option>
@@ -87,7 +90,7 @@
                             <option value="education">Education</option>
                             <option value="translation">Translations</option>
                         </select>
-                        <input type="submit" value="add product" name="add_product" class="btn">
+                        <input type="submit" value="add product" name="add_product" class="addbutton">
                     </form>
                 </div>
 
