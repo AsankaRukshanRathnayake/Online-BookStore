@@ -4,6 +4,27 @@
     if (isset($_SESSION['user_id'])){
         $user_id = $_SESSION['user_id'];
     }
+
+    if(isset($_POST['add_to_cart'])){
+        if(!isset($user_id)){
+            header('location:login.php');
+        }
+        else{
+            $product_name = $_POST['product_name'];
+            $product_price = $_POST['product_price'];
+            $product_image = $_POST['product_image'];
+            $product_quantity = $_POST['product_quantity'];
+         
+            $check_cart_numbers = mysqli_query($connection, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
+         
+            if(mysqli_num_rows($check_cart_numbers) > 0){
+               $message[] = 'already added to cart!';
+            }else{
+               mysqli_query($connection, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
+               $message[] = 'product added to cart!';
+            }
+        }
+     }
 ?>
 
 <!DOCTYPE html>
@@ -164,6 +185,7 @@
 
 <script src="js/script.js"></script>
 <script src="js/slidebar.js"></script>
+<script src="js/loggeduser.js"></script>
 
 
 </body>
