@@ -51,25 +51,11 @@
     <?php include 'header.php'; ?>
 
     <!--main body-->
-    <div class="heading">
-        <h3>shopping cart</h3>
-    </div>
-
     <div class="cart">
 
         <div class="cart_products_container">
-            <h1 class="title">products added</h1>
+            <h2 class="title">My Cart</h2>
             
-            <table border="1">
-                <tr>
-                    <th></th>
-                    <th>Book</th>
-                    <th>Name</th>
-                    <th>Unit Price</th>
-                    <th colspan=2>Quantity</th>
-                    <th>SubTotal</th>
-                </tr>
-
                 <?php
 
                 $grand_total = 0;
@@ -77,26 +63,39 @@
                 $select_cart = mysqli_query($connection, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
 
                 if(mysqli_num_rows($select_cart) > 0){
+                    ?>
+                    <table border="1">
+                <tr>
+                    <th>Book</th>
+                    <th>Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>SubTotal</th>
+                    <th></th>
+                </tr>
+                <?php
                     while($fetch_cart = mysqli_fetch_assoc($select_cart)){   
                 ?>
 
                 <tr>
-                    <td><a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a></td>
-                    <td><img class="product_image" src="original/uploaded_img/<?php echo $fetch_cart['image']; ?>" alt=""></td>
+                    <td><img class="product_image" src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt=""></td>
                     <td><div class="product_name"><?php echo $fetch_cart['name']; ?></div></td>
-                    <td><div class="product_price">$<?php echo $fetch_cart['price']; ?>/-</div></td>
+                    <td><div class="product_price">Rs.<?php echo $fetch_cart['price']; ?>/-</div></td>
 
                     <form action="" method="post">
                         <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
-                    <td><input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>"></td>
-                    <td><input type="submit" name="update_cart" value="update" class="update"></td>
+                    <td><input type="number" min="1" max="99" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
+                    <input type="submit" name="update_cart" value="Update" class="update"></td>
                     </form>
 
                     <td>
                         <div class="rowtotal"> 
-                            <span>$<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
+                            <span>Rs.<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
                         </div>
                     </td>
+
+                    <td><a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fa fa-trash" onclick="return confirm('delete this from cart?');"></a></td>
+                    
                 </tr>
 
                 <?php
@@ -118,17 +117,14 @@
 
         <div class="cart_total_container">
             <div class="grandtotal">
-                <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
+                <p>Grand Total</p>
+                <span>Rs.<?php echo $grand_total; ?>/-</span>
             </div>
                     
             <div class="flex">
-                <a href="shop.php" class="continuebutton">continue shopping</a>
-                <a href="checkout.php" class="checkout <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
+                <a href="checkout.php" class="checkout <?php echo ($grand_total > 1)?'':'disabled'; ?>">Proceed to Checkout</a>
             </div>
         </div>
-
-
-        
 
     </div>
 
