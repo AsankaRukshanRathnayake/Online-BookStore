@@ -31,9 +31,9 @@
       <div class="footer1_column">
          <h3>contact info</h3>
          <p> <i class="fas fa-phone"></i> +94 123 456 789 </p>
-         <p> <a href="mailto:thegiftshop@gmail.com"><i class="fas fa-envelope"></i> thegiftshop@gmail.com</a></p>
-         <p> <a href="#"> <i class="fab fa-facebook-f"></i> The GiftShop</a> </p>
-         <p> <a href="#"> <i class="fab fa-linkedin"></i> The GIftShop </a> </p>
+         <p> <a href="mailto:thebookstore@gmail.com"><i class="fas fa-envelope"></i> thebookstore@gmail.com</a></p>
+         <p> <a href="#"> <i class="fab fa-facebook-f"></i> TheBookStore</a> </p>
+         <p> <a href="#"> <i class="fab fa-linkedin"></i> TheBookStore</a> </p>
       </div>
 
    </div>
