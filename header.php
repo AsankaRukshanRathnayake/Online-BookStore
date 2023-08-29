@@ -70,6 +70,14 @@ if(isset($message)){
          </div>
 
          <!--
+            TODO
+
+            View user login details when click on user button
+         -->
+
+         
+
+         <!--
 
          <div class="">
             <?php 
