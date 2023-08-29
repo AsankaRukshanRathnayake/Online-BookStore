@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 19, 2023 at 05:25 PM
+-- Generation Time: Aug 29, 2023 at 03:46 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -36,16 +36,15 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `quantity` int(100) NOT NULL,
   `image` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `cart`
 --
 
 INSERT INTO `cart` (`id`, `user_id`, `name`, `price`, `quantity`, `image`) VALUES
-(3, 6, 'book2', 200, 1, 'Profile picture.JPG'),
-(4, 6, 'book3', 200, 2, 'Profile picture.JPG'),
-(5, 6, 'book7', 400, 3, 'Profile picture2.JPG');
+(7, 6, 'Madol Duwa', 500, 5, 'MadolDoova.jpg'),
+(8, 6, 'Amba Yahaluwo', 450, 2, 'amba yahaluwo.jpeg');
 
 -- --------------------------------------------------------
 
@@ -112,23 +111,28 @@ CREATE TABLE IF NOT EXISTS `products` (
   `name` varchar(100) NOT NULL,
   `category` varchar(100) NOT NULL,
   `price` int(100) NOT NULL,
+  `author` varchar(255) NOT NULL,
   `image` varchar(100) NOT NULL,
   `new` tinyint(1) NOT NULL DEFAULT '1',
+  `discount` int(100) NOT NULL DEFAULT '100',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `category`, `price`, `image`, `new`) VALUES
-(1, 'book1', '', 200, 'Profile picture.JPG', 1),
-(2, 'book2', '', 200, 'Profile picture.JPG', 1),
-(3, 'book3', '', 200, 'Profile picture.JPG', 1),
-(4, 'book4', '', 200, 'Profile picture.JPG', 1),
-(5, 'book7', '', 400, 'Profile picture2.JPG', 1),
-(6, 'Slayer', '', 500, 'Profile picture.JPG', 1),
-(7, 'Asanka', 'novels', 200, 'Profile picture2.JPG', 1);
+INSERT INTO `products` (`id`, `name`, `category`, `price`, `author`, `image`, `new`, `discount`) VALUES
+(15, 'Madol Duwa', 'novels', 500, 'Martin Wickramasinghe', 'MadolDoova.jpg', 1, 100),
+(16, 'Amba Yahaluwo', 'novels', 450, 'T.B. Ilangarathna', 'amba yahaluwo.jpeg', 1, 100),
+(17, 'Ali Panchata Padamak', 'children', 320, 'Fernando W.O.T.', 'alipanchatapadamak.jpeg', 1, 100),
+(18, 'Harry Potter & the Prisoner of Askaban', 'fiction', 1200, 'Rowling J.K.', 'harrypotter3.jpeg', 1, 100),
+(19, 'Harry Potter & the Chamber of Secreats', 'fiction', 1250, 'Rowling J.K.', 'harrypotter2.jpeg', 1, 100),
+(20, 'Harry Potter & the Sorcerer\'s Stone', 'fiction', 1200, 'Rowling J.K.', 'harrypotter1.jpg', 1, 100),
+(21, 'Golu Deriya', 'shortstories', 450, 'Manawasingha Chandrarathna', 'goluderiya.jpeg', 1, 100),
+(22, 'Red Pyramid', 'translation', 550, 'Rick Riordan', 'redpyramid.jpeg', 1, 100),
+(23, 'Mahawansa', 'education', 3000, 'Buddhist Cultural Center', 'mahawansa.jpeg', 1, 100),
+(24, 'Guru Geethaya', 'translation', 400, 'Chingees Aithmathaw', 'gurugeethaya.jpeg', 1, 100);
 
 -- --------------------------------------------------------
 
